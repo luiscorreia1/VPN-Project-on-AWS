@@ -24,6 +24,12 @@ apt install snmpd snmp libsnmp-dev
 nano /etc/snmp/snmpd.conf
 agentAddress udp:161
 
+commentar 
+#rocommunity  public default -V systemonly
+#rocommunity6 public default -V systemonly
+add 
+rocommunity  public 10.0.0.13 
+
 If you want ipv6
 agentAddress udp:161,udp6:[::1]:161
 ```
