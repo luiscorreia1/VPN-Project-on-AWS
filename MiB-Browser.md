@@ -20,7 +20,7 @@ cd ManageEngine/ManageEngine_Free_Tools/MibBrowser_Free_Tool/bin
 to add a clint 
 
 ```
-apt-get install snmpd
+apt install snmpd snmp libsnmp-dev
 nano /etc/snmp/snmpd.conf
 agentAddress udp:161
 
