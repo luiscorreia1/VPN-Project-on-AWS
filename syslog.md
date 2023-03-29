@@ -26,3 +26,12 @@ after installing the program you need to start the service you can do that by si
 ```
 service eventloganalyzer start
 ```
+
+config client 
+```
+nano /etc/rsyslog.conf
+```
+add 
+```
+*.* @<EventLog Analyzer server IP address>:<syslog port number>
+```
