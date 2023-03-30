@@ -1,3 +1,5 @@
+#Server
+
 install the vpn and easy-rsa:
 
 ```
@@ -59,10 +61,17 @@ edit the client config that is use to connect to the server:
 ```
 nano /etc/openvpn/client.conf 
 ```     
-     
-     
+#Client
+for the client the only thinks you need to do is 
 
-
-  
-  
-  
+update and install openvpn 
+```
+yum update && yum -y update
+amazon-linux-extras epel
+yum install openvpn     
+```
+copy the config file on the server to the client and run:
+``` 
+systemctl enable openvpn@server-ss-cli
+systemctl server openvpn@server-ss-cli
+```
