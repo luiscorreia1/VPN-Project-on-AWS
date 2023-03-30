@@ -7,6 +7,12 @@ nano /etc/sysctl.conf
 ```
 net.ipv4.ip_forward = 1
 ``` 
+
+you can check if the ipv4 forwarding is working by using:
+```
+sysctl -p
+```
+
 Iptables rules:
 ```
 turn on lan routing:
@@ -21,6 +27,7 @@ after to apply the changes:
   netfilter-persistent save
   netfilter-persistent reload
 ```
+
 
 #Nat on red hat 
 
