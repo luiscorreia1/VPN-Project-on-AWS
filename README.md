@@ -10,13 +10,13 @@ The Client and the Server configuration are just a exemple
 ![projeto](https://user-images.githubusercontent.com/114146685/229098640-73d59b25-d4aa-490c-8496-a0c42026f42b.png)
 
 
-# VPC's:
+### VPC's:
 | VPC       | Subnet                                 | IP                                                        | 
 |:---------:|:--------------------------------------:|:---------------------------------------------------------:|
 | PDL-VPC   | public-1 <br> private-1 <br> private-2 | 172.21.0.0/24 <br> 172.21.1.0/24 <br> 172.21.2.0/24       |
 | LIS-VPC   | puclic-1 <br> private-1 <br> private-2 | 192.168.0.0/26 <br> 192.168.0.64/26 <br> 192.168.0.128/26 |
 
-# PC's
+### PC's
 
 | PC         | IP                                                        |  
 |:----------:|:---------------------------------------------------------:|
