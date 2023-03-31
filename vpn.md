@@ -1,5 +1,7 @@
 #Server
 
+[server-ss.conf](https://github.com/luiscorreia1/projeto-de-cyber/blob/main/server-ss.conf)
+
 install the vpn and easy-rsa:
 
 ```
