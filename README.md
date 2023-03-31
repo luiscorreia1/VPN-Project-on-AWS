@@ -11,13 +11,11 @@ The Client and the Server configuration are just a exemple
 
 
 
-| vpc       | sub       | ip            | 
-| --------- |:---------:|:------------: |
-| PDL-VPC   | puclic-1  | 172.21.0.0/24 |
-|           | private-1 | 172.21.1.0/24 |
-|           | private-2 | 172.21.2.0/24 |
-
 | vpc       | sub       | ip               | 
+| --------- |:---------:|:----------------:|
+| PDL-VPC   | puclic-1  | 172.21.0.0/24    |
+|           | private-1 | 172.21.1.0/24    |
+|           | private-2 | 172.21.2.0/24    |
 | --------- |:---------:|:----------------:|
 | LIS-VPC   | puclic-1  | 192.168.0.0/26   |
 |           | private-1 | 192.168.0.64/26  |
