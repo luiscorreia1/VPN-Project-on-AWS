@@ -6,7 +6,7 @@ This project consists on configuring and installing a “Site to Site” vpn, �
 ![projeto](https://user-images.githubusercontent.com/114146685/229098640-73d59b25-d4aa-490c-8496-a0c42026f42b.png)
 [IP configuration](vpc-pc-ips.md)
 
-### First step
+## First step
 The First step of this project is to configure [nat](NAT.md) in order to have access to the internal machines.
 
 
