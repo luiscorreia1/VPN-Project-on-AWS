@@ -7,6 +7,6 @@ This project consists on configuring and installing a “Site to Site” vpn, �
 [IP configuration](vpc-pc-ips.md)
 
 ## First step
-The First step of this project is to configure [nat](NAT.md) in order to have access to the internal machines.
+The First step of this project is to configure [NAT](NAT.md) in order to have access to the internal machines.
 
 
