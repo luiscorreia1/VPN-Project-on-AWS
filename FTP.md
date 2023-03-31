@@ -23,7 +23,7 @@ write_enable=YES
 
 To start the FTP every time you boot the computer
 ```
-systemctl enable --now vsftpd
+systemctl enable vsftpd
 ```
 Start FTP server 
 ```

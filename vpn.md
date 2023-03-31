@@ -1,6 +1,14 @@
-#Server
+# Server
+Site to site server configuration example: [server-ss.conf](server-ss.conf)
+<br>
+Site to site client configuration example: [server-ss-cli.conf](server-ss-cli.conf) 
+<br>
+Remote access configuration example: [server-ra.conf](server-ra.conf)
 
-[server-ss.conf](https://github.com/luiscorreia1/projeto-de-cyber/blob/main/server-ss.conf)
+
+
+
+
 
 install the vpn and easy-rsa:
 

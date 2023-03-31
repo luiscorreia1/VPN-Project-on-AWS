@@ -6,7 +6,7 @@ First update the machine and install the application needed to do nat:
 apt update && apt -y upgrade
 apt install netfilter-persistent iptables-persistent net-tools
 ```
-Next is to uncomment ther `net.ipv4.ip_forward = 1` in the file `/etc/sysctl.conf` and make sure it's 1 or otherwise it's not going to forward ipv4:
+Next is to uncomment the `net.ipv4.ip_forward = 1` in the file `/etc/sysctl.conf` and make sure it's 1 or otherwise it's not going to forward ipv4:
 ```
 nano /etc/sysctl.conf
 ``` 
