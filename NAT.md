@@ -26,7 +26,7 @@ iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 ```
 Make port forwarding:
 ```
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 3389 -j DNAT --to-destination 10.0.1.10
+iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 3389 -j DNAT --to-destination 172.21.1.101
 ```
 To apply the changes:
 ```
@@ -35,7 +35,7 @@ netfilter-persistent reload
 ```
 
 
-## Nat on red hat 
+## Nat on redhat 
 
 First update the machine and install the application needed to do nat:
 ```
@@ -63,7 +63,7 @@ iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 ```
 Make port forwarding:
 ```
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 3389 -j DNAT --to-destination 10.0.1.10
+iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 3389 -j DNAT --to-destination 192.168.0.81
 ```
 To apply the changes:
 ```  
