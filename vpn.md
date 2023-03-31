@@ -1,24 +1,18 @@
-# Server
+# VPN
 Site to site server configuration example: [server-ss.conf](server-ss.conf)
 <br>
 Site to site client configuration example: [server-ss-cli.conf](server-ss-cli.conf) 
 <br>
 Remote access configuration example: [server-ra.conf](server-ra.conf)
 
-
-
-
-
-
-install the vpn and easy-rsa:
-
+Install the vpn and easy-rsa:
 ```
 apt install openvpn easy-rsa
 ```
-create the certs you are going to need:
+Create the certs you are going to need:
+<br>
+* easy-rsa:
 ```
-easy-rsa:
-
 cd /etc
 cp -R /usr/share/easy-rsa/ .
 cd easy-rsa/
@@ -27,13 +21,12 @@ cd easy-rsa/
 ./easyrsa build-server-full vpnsrv.enta.pt nopass
 ./easyrsa build-clint-full vpncli.enta.pt nopass
 ./easyrsa --subject-alt-name="DNS:www.enta.pt" sign-req server www.enta.pt
-
-openvpn:
-
+```
+* openvpn:
+```
 cd /etc/openvpn/   
 openssl dhparam -out dh2048.pem 2048
 openvpn --genkey --secret ta.key
-
 ```    
 copy the easy-rsa certs to the vpn folder: 
 ```
