@@ -9,5 +9,5 @@ This project consists on configuring and installing a “Site to Site” vpn, �
 ## First step
 The First step of this project is to configure [NAT](NAT.md) in order to have access to the internal machines.
 
-## second step
-The Second step is to install and configure [ftp server](FTP.md), in this project the ftp was created without security to user wireshark to see the username and password.
+## Second step
+The Second step is to install and configure [FTP server](FTP.md), in this project the ftp was created without security to user wireshark to see the username and password.
