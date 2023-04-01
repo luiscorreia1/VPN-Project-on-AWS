@@ -16,3 +16,7 @@ variable "vpc_ep_svc_name" {
 variable "config-lis" {
   default = "config-lis.sh"
 }
+
+variable "config-pdl" {
+  default = "config-pdl.sh"
+}

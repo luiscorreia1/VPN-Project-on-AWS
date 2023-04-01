@@ -31,6 +31,15 @@ data "template_cloudinit_config" "config-lis" {
     content_type = "text/x-shellscript"
     content = file(var.config-lis)
   }
+}
 
+data "template_cloudinit_config" "config-pdl" {
+  gzip = false
+  base64_encode = false
 
+  part {
+    filename = var.config-pdl
+    content_type = "text/x-shellscript"
+    content = file(var.config-pdl)
+  }
 }

@@ -40,7 +40,7 @@ resource "aws_security_group" "pdl-default" {
   vpc_id      = aws_vpc.pdl-vpc.id
 }
 
-resource "aws_vpc_security_group_ingress_rule" "home" {
+resource "aws_vpc_security_group_ingress_rule" "home-pdl" {
   cidr_ipv4              = "1.1.1.1/32"
   description            = "home"
   ip_protocol            = "-1"
@@ -48,7 +48,4 @@ resource "aws_vpc_security_group_ingress_rule" "home" {
   tags                   = {
     "Name" = "home"
   }
-  depends_on = [
-    aws_security_group.pdl-default
-  ]
 }

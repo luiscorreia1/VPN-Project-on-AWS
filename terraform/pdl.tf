@@ -17,7 +17,7 @@ resource "aws_instance" "pdl-srv" {
     volume_size           = 30
     volume_type           = "gp2"
   }
-  user_data = data.template_file.pdl.rendered
+  user_data = data.template_cloudinit_config.config-pdl.rendered
 }
 
 resource "aws_network_interface" "pdl-private1" {
@@ -70,7 +70,4 @@ resource "aws_eip" "pdl-public-ip" {
   tags                                 = {
     "Name" = "pdl public IP"
   }
-  depends_on = [
-    aws_instance.pdl-srv
-  ]
 }

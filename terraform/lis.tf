@@ -70,7 +70,4 @@ resource "aws_eip" "lis-public-ip" {
   tags                                 = {
     "Name" = "lis public IP"
   }
-  depends_on = [
-    aws_instance.lis-srv
-  ]
 }
