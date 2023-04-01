@@ -1,5 +1,5 @@
 resource "aws_instance" "lis-srv" {
-  ami                                  = var.lis-srv
+  ami                                  = var.lis-ami
   instance_type                        = "t2.small"
   key_name                             = aws_key_pair.lis.key_name
   network_interface {
@@ -17,7 +17,7 @@ resource "aws_instance" "lis-srv" {
     volume_size           = 30
     volume_type           = "gp2"
   }
-  user_data = data.template_file.winsrv.rendered
+  user_data = data.template_cloudinit_config.config-lis.rendered
 }
 
 resource "aws_network_interface" "lis-private1" {

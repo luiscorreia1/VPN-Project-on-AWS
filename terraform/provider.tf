@@ -21,3 +21,16 @@ provider "aws" {
 
   profile = "default"
 }
+
+data "template_cloudinit_config" "config-lis" {
+  gzip = false
+  base64_encode = false
+
+  part {
+    filename = var.config-lis
+    content_type = "text/x-shellscript"
+    content = file(var.config-lis)
+  }
+
+
+}

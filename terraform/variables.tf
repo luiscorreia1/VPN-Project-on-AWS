@@ -13,3 +13,6 @@ variable "vpc_ep_svc_name" {
   default = "com.amazonaws.us-east-1.s3"
 }
 
+variable "config-lis" {
+  default = "config-lis.sh"
+}
