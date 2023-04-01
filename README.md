@@ -14,3 +14,9 @@ The Second step is to install and configure [FTP server](ftp.md), in this projec
 
 ## Third step 
 The third step is to install a MibBrowser and configure [snmp](snmp.md) on the other machines 
+
+## Fourth step 
+The fourth step in to install a [syslog server](syslog.md) and add the other computer to the server.
+
+## Final step
+The final step is to install and configure the [vpn](vpn.md) on the PDL-srv and configure the client on LIS-srv.
