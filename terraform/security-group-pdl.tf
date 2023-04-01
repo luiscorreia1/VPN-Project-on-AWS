@@ -21,7 +21,6 @@ resource "aws_security_group" "pdl-default" {
         "192.168.0.0/16",
         "172.16.0.0/12",
         "10.0.0.0/8",
-        aws_eip.lis-public-ip.public_ip,
       ]
       description      = "RFC 1918"
       from_port        = 0
@@ -47,5 +46,15 @@ resource "aws_vpc_security_group_ingress_rule" "home-pdl" {
   security_group_id      = aws_security_group.pdl-default.id
   tags                   = {
     "Name" = "home"
+  }
+}
+
+resource "aws_vpc_security_group_ingress_rule" "lis-pub-ip" {
+  cidr_ipv4              = aws_eip.lis-public-ip.public_ip
+  description            = "lis-pub-ip"
+  ip_protocol            = "-1"
+  security_group_id      = aws_security_group.pdl-default.id
+  tags                   = {
+    "Name" = "lis-pub-ip"
   }
 }

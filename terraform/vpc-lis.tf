@@ -25,7 +25,7 @@ resource "aws_subnet" "lis-subnet-private2" {
 
 resource "aws_subnet" "lis-subnet-public1" {
   availability_zone                              = var.avail_zone
-  cidr_block                                     = "192.168.0./26"
+  cidr_block                                     = "192.168.0.0/26"
   tags                                           = {
     "Name" = "lis-subnet-public1"
   }
