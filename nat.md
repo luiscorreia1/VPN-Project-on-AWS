@@ -70,3 +70,19 @@ To apply the changes:
 iptables -F
 service iptables save
 ```
+
+# Client
+On the client i need to add the next lines to the netplan in other to have internet on the client
+```
+routes:
+  - to: 0.0.0.0/0
+    via:172.16.1.100
+    on-link: true
+```
+You need to be very carefully because if you hava a wrong ip or a space more or less you could lose access to the computer.
+<br>
+After adding the config to the file save the netplan:
+```
+netplan try
+```
+I used netplan try instead of using netplan apply to check if the configuration is correct 
