@@ -11,3 +11,6 @@ The First step of this project is to configure [NAT](NAT.md) in order to have ac
 
 ## Second step
 The Second step is to install and configure [FTP server](FTP.md), in this project the ftp was created without security to user wireshark to see the username and password.
+
+## Third step 
+The third step is to install a MibBrowser and configure [snmp](snmp.md) on the other machines 
