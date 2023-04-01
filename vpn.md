@@ -1,9 +1,9 @@
 # VPN
-Site to site server configuration example: [server-ss.conf](server-ss.conf)
+Site to site server configuration example: [server-ss.conf](configurations/server-ss.conf)
 <br>
-Site to site client configuration example: [server-ss-cli.conf](server-ss-cli.conf) 
+Site to site client configuration example: [server-ss-cli.conf](configurations/server-ss-cli.conf) 
 <br>
-Remote access configuration example: [server-ra.conf](server-ra.conf)
+Remote access configuration example: [server-ra.conf](configurations/server-ra.conf)
 
 Install the vpn and easy-rsa:
 ```
