@@ -54,7 +54,7 @@ To activate the vpn:
 systemctl enable openvpn@server-ra
 systemctl start openvpn@server-ra
 systemctl enable openvpn@server-ss
-systemctl server openvpn@server-ss
+systemctl start openvpn@server-ss
 ```
 Check if the port of the vpn are open 
 ```
