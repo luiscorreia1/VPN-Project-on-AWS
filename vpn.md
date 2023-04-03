@@ -76,5 +76,5 @@ yum install openvpn
 Copy the config file on the server to the client and run:
 ``` 
 systemctl enable openvpn@server-ss-cli
-systemctl server openvpn@server-ss-cli
+systemctl start openvpn@server-ss-cli
 ```
